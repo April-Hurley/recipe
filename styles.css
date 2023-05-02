@@ -1,9 +1,28 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+nav a, nav, li,  footer{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    padding-top: 100px;
+}
+h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
 nav,nav ul, nav ul li{
     padding: 0;
     margin: 0;
-    text-decoration: none;
     box-sizing: border-box;
-
 }
 nav{
     height: 80px;
@@ -11,14 +30,22 @@ nav{
     position: fixed;
     top: 0;
     overflow: hidden;
+    background-color: #F2F2F2;
+    box-shadow:inset;
 }
 li a{
     display: block;
     text-align: center;
     padding: 16px;
+    font-size: 10px;
 }
 nav li{
+    list-style-type: none;
     float: right;
+}
+nav img{
+    width: 60px;
+    height: 60px;
 }
 html{
     background-color: rgba(122, 191, 191, .5);
@@ -29,4 +56,44 @@ body{
 menu{
     float: left;
     padding: 16px;
+    color:#EB5428;
+    list-style-type: none;
+}
+#logo{
+    position: inherit;
+    clear: both;
+    background-color: #EB5428;
+    border-radius: 12px;
+}
+#streetTacos{
+    height: 300px;
+    float: left;
+}
+.sideDishes{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    clear: both;
+    background-color: #7ABFBF;
+}
+.sideDishes h2{
+    translate: 600px -100px;
+}
+.ingredients{
+    float: left;
+    padding:50px;
+}
+.intro p{
+    width: 800px;
+    translate: 200px 1px;
+}
+.details{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #0D0D0D;
+    color: #7ABFBF;
+    clear: both;
+}
+#theCheese{
+    float: left;
+    width: 200px;
 }
